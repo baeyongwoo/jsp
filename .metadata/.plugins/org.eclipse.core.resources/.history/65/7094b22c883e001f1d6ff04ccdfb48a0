@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>회원가입</h2>
+	<hr>
+	<div>
+		<form action="/join" method="post">
+			id : <input type="text" name="id" size="10" placeholder="id">
+			pw : <input type="password" name="pw" size="10"> 
+			name : <input type="text" name="name" size="10" placeholder=""> 
+			age : <input type="date" name="birth" size="10"> 
+			gender : <input type="checkbox" name="gender" value="boy">남 
+			<input type="checkbox" name="gender" value="girl">여 
+			<input type="submit" value="실행">
+		</form>
+	</div>
+</body>
+</html>

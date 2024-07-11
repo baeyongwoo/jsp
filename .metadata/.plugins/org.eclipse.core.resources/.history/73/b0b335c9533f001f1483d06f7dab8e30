@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<jsp:useBean id="calc" class="Ex0711.Login" />
+    <jsp:setProperty name= "calc" property="*"/>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>login Sucess</title>
+</head>
+<script>
+alert("성공");
+</script>
+<body>
+	<div>
+		ID : ${userInfo.id}
+		PW : ${userInfo.pw}
+	</div>
+	
+</body>
+</html>

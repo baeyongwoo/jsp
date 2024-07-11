@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>계산기</title>
+</head>
+<body>
+	<h2>게산기</h2>
+	<hr>
+	<form action="/calc" method="post">
+		
+	</form>
+</body>
+</html>
