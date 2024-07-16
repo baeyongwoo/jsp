@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-footer Area
+	<a href="/list.do">게시판</a>
 </body>
 </html>
