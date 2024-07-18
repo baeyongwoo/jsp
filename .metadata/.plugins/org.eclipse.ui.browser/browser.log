@@ -28,3 +28,6 @@
 7월 10, 2024 17:05:11.73 [9940:17240:0710/170511.733:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.266 s for first_image_paint 0.249 s
 7월 10, 2024 17:05:11.83 [9940:17240:0710/170511.834:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.266 s for first_image_paint 0.249 s
 7월 10, 2024 17:05:11.99 [9940:17240:0710/170511.994:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 0.266 s for first_image_paint 0.249 s
+
+7월 18, 2024 14:59:26.94 NEW SESSION
+7월 18, 2024 14:59:26.95 Created TensorFlow Lite XNNPACK delegate for CPU.

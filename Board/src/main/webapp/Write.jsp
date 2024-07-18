@@ -34,11 +34,21 @@
     function validation(){
     	console.log("파일첨부 함수실행");
     	let fileName = document.getElementById('ofile');
-    	let ext = fileName.value.split('.')[1] //파일 확장자 체크
+    	let ext = fileName.files[0].name.split('.')[1]
+    	//let ext = fileName.value.split('.')[1] //파일 확장자 체크
     	if(ext==="exe"){
     		alert("실행파일은 업로드 할 수 없습니다.");
     		fileName = "";
-    		return;
+    		return false;
+    	}
+    	
+    	console.log();
+    	
+    	let fileSize = fileName.files[0].size;
+    	
+    	if(fileSize > 5*1024*1024){
+    		alert("파일크기는 5Mbyte를 초과할 수 없습니다.");
+    		return false;
     	}
     	
     }

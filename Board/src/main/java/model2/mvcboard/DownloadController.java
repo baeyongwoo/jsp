@@ -33,6 +33,9 @@ public class DownloadController extends HttpServlet {
 			String idx = request.getParameter("idx");
 			
 			FileUtil.download(request, response, "/Uploads", sfile, ofile);
+			MVCBoardDAO dao = new MVCBoardDAO();
+			dao.downCountPlus(idx);
+			dao.close();
 	}
 
 	/**

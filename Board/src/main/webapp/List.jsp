@@ -6,30 +6,37 @@
 <head>
 <meta charset="UTF-8">
 <title>파일 첨부형 게시판</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <style>a{text-decoration:none;}</style>
 </head>
 <body>
-    <h2>파일 첨부형 게시판 - 목록 보기(List)</h2>
+
+	<div class="container">
+	
+    <h2>수업 게시판 - 목록 보기(List)</h2>
 
     <!-- 검색 폼 -->
     <form method="get">  
-    <table border="1" width="90%">
+    <table  width="100%">
     <tr>
         <td align="center">
-            <select name="searchField">
-                <option value="title">제목</option>
-                <option value="content">내용</option>
-            </select>
-            <input type="text" name="searchWord" />
-            <input type="submit" value="검색하기" />
+        	<div class="input-group mb-3" style="width:50%" >
+            	<select name="searchField" class="form-control" style="flex:1;">
+                	<option value="title">제목</option>
+                	<option value="name">작성자</option>
+            	</select>
+            	<input type="text" name="searchWord" value="${map.searchWord}" class="form-control" style="flex:4"/>
+            	<input class="btn btn-primary btn-sm" type="submit" value="검색" />
+        	</div>
         </td>
     </tr>
     </table>
     </form>
 
     <!-- 목록 테이블 -->
-    <table border="1" width="90%">
-        <tr>
+    <table class="table" border="1" width="90%">
+        <tr align="center">
             <th width="10%">번호</th>
             <th width="*">제목</th>
             <th width="15%">작성자</th>
@@ -69,14 +76,15 @@
     </table>
 
     <!-- 하단 메뉴(바로가기, 글쓰기) -->
-    <table border="1" width="90%">
+    <table  width="100%">
         <tr align="center">
             <td>
                 ${ map.pagingImg }
             </td>
-            <td width="100"><button type="button"
-                onclick="location.href='/write.do';">글쓰기</button></td>
+            <td width="100">
+            <button type="button" class="btn btn-primary btn-sm" onclick="location.href='/write.do';">글쓰기</button></td>
         </tr>
     </table>
+    </div>
 </body>
 </html>

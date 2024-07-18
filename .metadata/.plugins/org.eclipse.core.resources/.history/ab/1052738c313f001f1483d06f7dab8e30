@@ -1,8 +1,0 @@
-package ch07;
-
-import java.beans.JavaBean;
-
-@JavaBean
-public class Calcuator {
-
-}

@@ -37,10 +37,20 @@ public class ListController extends HttpServlet {
 		//DAO 생성. MVCBoardDAO는 DBConnPool의 자식이므로 DBConnPool의 생성자를 통해서 DB연결.
 		MVCBoardDAO dao = new MVCBoardDAO();
 		
-		int totalCount = dao.selectCount();
 		
 		
 		Map<String, Object> map = new HashMap<String, Object>();
+		
+		int totalCount = dao.selectCount(map);
+		String searchField = request.getParameter("searchField");
+		String searchWord = request.getParameter("searchWord");
+		
+		if(searchWord != null) {
+			map.put("searchField", searchField);
+			map.put("searchWord", searchWord);
+			
+		}
+		
 //		페이지 처리
 		int pageSize = 10;
 		int blockPage = 5;
