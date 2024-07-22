@@ -54,12 +54,14 @@
 					</c:choose></td>
 			</tr>
 			<tr>
-				<td colspan="2" align="center"><input type="submit" value="확인"
-					onclick="return joinCheck()">
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="reset" value="취소">
+				<td colspan="2" align="center">
+				<input type="submit" value="확인" onclick="return joinCheck()">
+				<input type="reset" value="취소">
+				
 				</td>
 			</tr>
 		</table>
 	</form>
+	<button onclick="location.href='/main.jsp'">돌아가기</button>
 </body>
 </html>

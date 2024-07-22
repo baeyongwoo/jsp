@@ -108,7 +108,27 @@ public class MemberDAO extends DBConnPool{
 		}
 		
 		
-	}
+	}//updateMember end
+	public int JoinMember(MemberDTO userInfo) {
+		String sql = "insert into member values(?, ?, ?, ?, ?,?)";
+		int result = -1;
+		try {
+			con = getConnection();
+			psmt = con.prepareStatement(sql);
+			psmt.setString(1, userInfo.getName());
+			psmt.setString(2, userInfo.getUserid());
+			psmt.setString(3, userInfo.getPwd());
+			psmt.setString(4, userInfo.getEmail());
+			psmt.setString(5, userInfo.getPhone());
+			psmt.setInt(6, userInfo.getAdmin());
+			result = psmt.executeUpdate();
+		} catch (Exception e) {
+			System.err.println("joinMember Err");
+			e.printStackTrace();
+		}
+		return result;
+		
+	}//Join end
 	
 	
 }

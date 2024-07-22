@@ -9,6 +9,8 @@ A:\academe\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2
 \Member\src\main\java
 A:\academe\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3382964702.index
 \includeTest\src\main\java
+A:\academe\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1767004994.index
+\NaverSearch\src\main\java
 A:\academe\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1496269162.index
 \Calc\src\main\java
 A:\academe\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2526476447.index
@@ -47,3 +49,5 @@ A:\academe\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2
 \JstlEL\src\main\java
 A:\academe\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4176496033.index
 \Member\src\main\java
+A:\academe\jsp_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\477077584.index
+\WebSocketTest\src\main\java
